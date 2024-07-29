@@ -10,6 +10,7 @@ defmodule Lokal do
     A module representing a tunnel.
     """
 
+    @derive Jason.Encoder
     defstruct [
       :id,
       :name,
@@ -49,6 +50,7 @@ defmodule Lokal do
       %__MODULE__{}
     end
 
+    @spec set_local_address(Lokal.Tunnel.t(), any()) :: Lokal.Tunnel.t()
     @doc """
     Sets the local address for the tunnel.
     """
