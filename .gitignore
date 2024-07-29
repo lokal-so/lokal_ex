@@ -24,3 +24,5 @@ lokal_ex-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+testing_thelib
